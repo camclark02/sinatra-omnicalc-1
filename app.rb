@@ -8,7 +8,11 @@ get("/") do
   "
 end
 
-get("/square_new") do
+get("/square/new") do
 
-er(:square)
+erb(:square)
 end
+
+get("/square/results") do
+
+erb(:square_results)
