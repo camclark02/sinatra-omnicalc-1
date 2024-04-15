@@ -33,5 +33,5 @@ get("/square_root/results") do
 erb(:square_root_results)
 end
 
-get("/random/new")
+get("/random/new") do
 end
