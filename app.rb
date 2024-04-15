@@ -24,3 +24,13 @@ get("/square_root/new") do
 
   erb(:square_root)
 end
+
+get("/square_root/results") do
+  @input = params.fetch("number").to_f
+
+  @root = @input ** 0.5
+
+erb(:square_root_results)
+end
+
+get("/random/new")
