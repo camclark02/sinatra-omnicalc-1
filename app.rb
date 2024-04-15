@@ -34,3 +34,4 @@ erb(:square_root_results)
 end
 
 get("/random/new")
+end
