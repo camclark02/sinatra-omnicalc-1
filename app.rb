@@ -44,3 +44,8 @@ get("/random/results") do
   @random_number = rand(@minimum..@maximum).to_f
   erb(:random_results)
 end
+
+get("/payment/new") do
+
+erb(:payment)
+end
