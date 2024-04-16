@@ -61,6 +61,6 @@ periods = @years * 12
 numerator = period_rate * @principal
 denominator = 1 - (1 + period_rate) ** (-1 * periods)
 
-@monthly_payment = numerator / denominator
+@monthly_payment = (numerator/denominator).to_fs(:currency)
 erb(:payment_results)
 end
